@@ -1,0 +1,43 @@
+:root {
+    //默认小按钮背景色
+    --acme-btn-bg: #f8f4f4;
+    //登录页面背景色
+    --acme-login-bg: #409eff;
+    //左侧菜单背景色
+    --acme-side-menu-bg: rgb(255, 255, 255);
+    //左侧菜单按钮背景色
+    --acme-side-menu-item-bg: rgba(255, 255, 255, .1);
+    //左侧主菜单背景色
+    --acme-side-main-menu-bg: #222b45;
+    //内容区背景色
+    --acme-content-bg: rgb(243, 242, 242);
+    //layout header高度
+    --acme-layout-header-height: 60px;
+    //layout side 宽度
+    --acme-layout-side-width: 300px;
+    //layout side 菜单栏宽度
+    --acme-layout-side-main-width: 90px;
+    //组件全局圆角大小
+    --acme-border-radius: 4px;
+    //scroll滑道背景色
+    --acme-scroll-bg: rgb(243, 242, 242);
+
+    //tab高度
+    .header-tabs .el-tabs {
+        --el-tabs-header-height: 35px;
+    }
+
+    //是否显示submenu
+    .submenu-hide {
+        --acme-layout-side-width: 60px;
+    }
+
+    //当可视区域<768px隐藏
+    @media (max-width: 992px) {
+        --acme-layout-side-width: 0px;
+    }
+
+    .collapse {
+        --acme-layout-side-width: 90px;
+    }
+}

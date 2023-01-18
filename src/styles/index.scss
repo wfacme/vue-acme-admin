@@ -1,0 +1,8 @@
+@use "./theme/dark.vars.scss";
+@use "./theme/shop.vars.scss";
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+    $header:(
+        'padding': 0,
+    ),
+);
